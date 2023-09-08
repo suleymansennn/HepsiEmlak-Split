@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-import openpyxl as op
+
 
 data = st.file_uploader("Choose Data", type="xlsx")
 
