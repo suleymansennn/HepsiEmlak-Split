@@ -7,8 +7,8 @@ data = st.file_uploader("Choose Data", type="xlsx")
 if data:
     new_df = pd.read_excel(data)
 
-threshold=3000
-loop_n = new_df.shape[0] // 3000
+threshold=4999
+loop_n = new_df.shape[0] // 4999
 
 for i in range(loop_n+1):
         if i == 0:
