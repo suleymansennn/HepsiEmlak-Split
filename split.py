@@ -2,10 +2,10 @@ import pandas as pd
 import streamlit as st
 
 
-data = st.file_uploader("Choose Data", type="xlsx")
+data = st.file_uploader("Choose Data", type="csv")
 
 if data:
-    new_df = pd.read_excel(data)
+    new_df = pd.read_csv(data)
 
 threshold=4999
 loop_n = new_df.shape[0] // 4999
