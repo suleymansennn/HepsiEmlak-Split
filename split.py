@@ -21,5 +21,5 @@ for i in range(loop_n+1):
             else:
                 exec(f"formatted_data{i} = new_df.loc[(i * threshold) + 1:(i + 1) * threshold]")
 
-        st.download_button(f"Download formatted data part{i} as CSV", data=eval(f"formatted_data{i}").to_csv(index=False),
-                           file_name=f"formatted_data_part{i}.csv")
+        st.download_button(f"Download formatted data part{i} as CSV", data=eval(f"formatted_data{i}").to_excel(index=False),
+                           file_name=f"formatted_data_part{i}.xlsx")
